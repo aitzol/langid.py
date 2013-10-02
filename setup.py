@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-version = '1.1'
+version = '1.1.4'
 
 setup(name='langid',
       version=version,
@@ -21,7 +21,9 @@ setup(name='langid',
           'numpy',
           'bz2',
       ],
-      entry_points="""
-      # -*- Entry points: -*-
-      """,
+      entry_points= {
+        'console_scripts': [
+          'langid = langid.langid:main',
+        ],
+      },
       )
