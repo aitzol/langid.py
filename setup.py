@@ -20,6 +20,7 @@ setup(name='langid',
       install_requires=[
           # -*- Extra requirements: -*-
           'numpy',
+          'bz2',
       ],
       entry_points="""
       # -*- Entry points: -*-
